@@ -276,7 +276,7 @@ const Home = () => {
               </div>
             </div>
 
-            <div className="flex gap-6">
+            <div className="flex flex-wrap justify-center gap-6">
               <a href="https://smartholdem.io" target="_blank" rel="noopener noreferrer" className="text-text-muted hover:text-brand-primary transition-colors text-sm">
                 Official Website
               </a>
