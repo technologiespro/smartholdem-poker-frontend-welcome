@@ -31,7 +31,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="relative pt-40 pb-20 px-[7.6923%] overflow-hidden" style="margin-top: 80px;">
+    <section class="relative pb-20 px-[7.6923%] overflow-hidden" style="padding-top: 160px;">
       <!-- Animated background pattern -->
       <div class="absolute inset-0 opacity-10">
         <div class="absolute inset-0" :style="backgroundPattern"></div>

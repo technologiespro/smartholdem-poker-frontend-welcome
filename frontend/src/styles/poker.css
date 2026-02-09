@@ -419,8 +419,9 @@ body {
   padding-top: 0;
 }
 
+/* Remove margin-top from hero section since we use padding-top now */
 section:first-of-type {
-  margin-top: 80px;
+  margin-top: 0 !important;
 }
 
 /* Responsive Design */
@@ -438,8 +439,8 @@ section:first-of-type {
     height: 70px;
   }
   
-  section:first-of-type {
-    margin-top: 70px;
+  section {
+    padding-top: 120px !important;
   }
 
   .dark-nav {
