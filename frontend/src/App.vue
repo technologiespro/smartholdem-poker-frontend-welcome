@@ -11,6 +11,9 @@ export default {
 </script>
 
 <style>
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 @import './styles/app.css';
 @import './styles/poker.css';
 </style>
