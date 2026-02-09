@@ -3,11 +3,13 @@
     <!-- Navigation -->
     <nav class="dark-header">
       <div class="flex items-center">
-        <img 
-          src="https://customer-assets.emergentagent.com/job_smartholdem-poker/artifacts/kqhvt3nj_sth256x256.png" 
-          alt="SmartHoldem" 
-          class="h-12 w-12 object-contain"
-        />
+        <div class="w-12 h-12 flex items-center justify-center bg-white rounded-full">
+          <img 
+            src="https://customer-assets.emergentagent.com/job_smartholdem-poker/artifacts/kqhvt3nj_sth256x256.png" 
+            alt="SmartHoldem" 
+            class="h-10 w-10 object-contain"
+          />
+        </div>
         <span class="ml-3 text-xl font-semibold">SmartHoldem Poker</span>
       </div>
       
@@ -206,11 +208,13 @@
       <div class="max-w-6xl mx-auto">
         <div class="flex flex-col md:flex-row justify-between items-center gap-6">
           <div class="flex items-center gap-3">
-            <img 
-              src="https://customer-assets.emergentagent.com/job_smartholdem-poker/artifacts/kqhvt3nj_sth256x256.png" 
-              alt="SmartHoldem" 
-              class="h-10 w-10 object-contain"
-            />
+            <div class="w-10 h-10 flex items-center justify-center bg-white rounded-full">
+              <img 
+                src="https://customer-assets.emergentagent.com/job_smartholdem-poker/artifacts/kqhvt3nj_sth256x256.png" 
+                alt="SmartHoldem" 
+                class="h-8 w-8 object-contain"
+              />
+            </div>
             <div>
               <div class="font-semibold">SmartHoldem Poker</div>
               <div class="text-sm text-text-muted">Powered by STH Blockchain</div>
