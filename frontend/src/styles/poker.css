@@ -414,6 +414,15 @@ body {
   }
 }
 
+/* Fix for fixed header overlap */
+body {
+  padding-top: 0;
+}
+
+section:first-of-type {
+  margin-top: 80px;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .display-huge {
@@ -427,6 +436,10 @@ body {
   .dark-header {
     padding: 16px 20px;
     height: 70px;
+  }
+  
+  section:first-of-type {
+    margin-top: 70px;
   }
 
   .dark-nav {
