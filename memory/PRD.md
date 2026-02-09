@@ -4,7 +4,7 @@
 One-page landing website for SmartHoldem blockchain poker platform. Designed for VIP poker players to register for priority access to the decentralized poker room.
 
 ## Original Problem Statement
-Создать одностраничный сайт для покерной блокчейн платформы SmartHoldem. Сайт для приоритетного доступа к покер-руму, с регистрацией через Google Sheets. Современный VIP-дизайн для игроков в покер, английский язык, мобильная адаптация.
+Создать одностраничный сайт для покерной блокчейн платформы SmartHoldem. Сайт для приоритетного доступа к покер-руму, с регистрацией через Google Sheets. Современный VIP-дизайн для игроков в покер, английский язык, мобильная адаптация. **На Vue 3 с Vite и Options API**.
 
 ## User Personas
 - **Professional Poker Players**: Looking for transparent, fair online poker platforms
@@ -19,18 +19,26 @@ One-page landing website for SmartHoldem blockchain poker platform. Designed for
 - Fully responsive (mobile, tablet, desktop)
 - Subtle animations throughout the page
 - SmartHoldem logo integration
+- **Vue 3 framework with Options API**
 
 ## Architecture & Tech Stack
-- **Frontend**: React 19, TailwindCSS
-- **Styling**: Custom CSS with dark theme guidelines
-- **Icons**: Lucide React
-- **Routing**: React Router DOM
+- **Frontend**: Vue 3.4.21 with Options API
+- **Build Tool**: Vite 5.1.5
+- **Routing**: Vue Router 4.3.0
+- **Icons**: Lucide Vue Next 0.344.0
+- **Styling**: Custom CSS with dark theme guidelines + Tailwind CSS
 - **No Backend**: Informational site only
 
 ## Implemented Features (December 9, 2025)
 
+### ✅ Vue 3 Migration Complete
+- Migrated from React to Vue 3 with Vite
+- Using Options API instead of Composition API
+- All components converted to .vue single file components
+- Vue Router configured for smooth scroll behavior
+
 ### ✅ Navigation Header
-- Fixed header with logo and navigation
+- Fixed header with logo (with white background circle) and navigation
 - Desktop menu (Features, Advantages, Early Access)
 - Primary CTA button "Register Now"
 - Responsive mobile view
@@ -43,7 +51,7 @@ One-page landing website for SmartHoldem blockchain poker platform. Designed for
 - Floating poker chip animations in background
 
 ### ✅ Features Section
-- 4 feature cards with icons
+- 4 feature cards with Lucide Vue icons
 - Decentralized & Secure
 - Tournament System
 - Influencer Tournaments
@@ -62,7 +70,7 @@ One-page landing website for SmartHoldem blockchain poker platform. Designed for
 - Limited time offer badge
 
 ### ✅ Footer
-- Logo and branding
+- Logo with white background circle and branding
 - Links to Official Website, Documentation, Support
 - Copyright notice
 
@@ -73,6 +81,29 @@ One-page landing website for SmartHoldem blockchain poker platform. Designed for
 - Subtle animations (fade-in, float, chip stack animation)
 - Responsive grid layouts
 - High contrast typography for dark theme
+
+## Technical Details
+
+### Vue 3 Components Structure
+```
+/app/frontend/
+├── index.html
+├── vite.config.js
+├── package.json
+├── src/
+│   ├── App.vue (root component)
+│   ├── main.js (entry point with Vue Router)
+│   ├── pages/
+│   │   └── Home.vue (main landing page with Options API)
+│   └── styles/
+│       ├── app.css
+│       └── poker.css
+```
+
+### Vue Router Configuration
+- History mode with smooth scroll
+- Hash navigation for same-page sections
+- Single route: Home page at /
 
 ## Next Tasks
 - None (MVP complete - informational landing page only)
@@ -85,6 +116,7 @@ One-page landing website for SmartHoldem blockchain poker platform. Designed for
 - ✅ Mobile responsive design
 - ✅ Dark VIP poker theme
 - ✅ Animations
+- ✅ Vue 3 migration with Options API
 
 ## P1 Features (Future)
 - Backend integration for actual Google Sheets submission
@@ -105,5 +137,8 @@ One-page landing website for SmartHoldem blockchain poker platform. Designed for
 ## Notes
 - Registration links currently point to google.com (placeholder)
 - No backend required - purely informational landing page
-- Logo provided by user (SmartHoldem red logo)
+- Logo provided by user (SmartHoldem red logo with white background circle)
 - All text content in English as requested
+- **Successfully migrated from React to Vue 3**
+- Using Vite for fast development and build
+- Options API chosen per user preference
