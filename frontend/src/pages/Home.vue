@@ -3,13 +3,11 @@
     <!-- Navigation -->
     <nav class="dark-header">
       <div class="flex items-center">
-        <div class="w-12 h-12 flex items-center justify-center bg-white rounded-full">
-          <img 
-            src="https://customer-assets.emergentagent.com/job_smartholdem-poker/artifacts/kqhvt3nj_sth256x256.png" 
-            alt="SmartHoldem" 
-            class="h-10 w-10 object-contain"
-          />
-        </div>
+        <img 
+          src="https://customer-assets.emergentagent.com/job_smartholdem-poker/artifacts/kqhvt3nj_sth256x256.png" 
+          alt="SmartHoldem" 
+          class="h-10 w-10 object-contain"
+        />
         <span class="ml-3 text-xl font-semibold">SmartHoldem Poker</span>
       </div>
       
@@ -31,7 +29,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="relative pb-20 px-[7.6923%] overflow-hidden" style="padding-top: 200px;">
+    <section class="relative pt-32 pb-20 px-[7.6923%] overflow-hidden">
       <!-- Animated background pattern -->
       <div class="absolute inset-0 opacity-10">
         <div class="absolute inset-0" :style="backgroundPattern"></div>
@@ -208,13 +206,11 @@
       <div class="max-w-6xl mx-auto">
         <div class="flex flex-col md:flex-row justify-between items-center gap-6">
           <div class="flex items-center gap-3">
-            <div class="w-10 h-10 flex items-center justify-center bg-white rounded-full">
-              <img 
-                src="https://customer-assets.emergentagent.com/job_smartholdem-poker/artifacts/kqhvt3nj_sth256x256.png" 
-                alt="SmartHoldem" 
-                class="h-8 w-8 object-contain"
-              />
-            </div>
+            <img 
+              src="https://customer-assets.emergentagent.com/job_smartholdem-poker/artifacts/kqhvt3nj_sth256x256.png" 
+              alt="SmartHoldem" 
+              class="h-10 w-10 object-contain"
+            />
             <div>
               <div class="font-semibold">SmartHoldem Poker</div>
               <div class="text-sm text-text-muted">Powered by STH Blockchain</div>

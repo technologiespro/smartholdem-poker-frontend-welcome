@@ -93,20 +93,19 @@ body {
 
 /* Navigation */
 .dark-header {
-  background: var(--bg-primary);
+  background: rgba(0, 0, 0, 0.95);
   border-bottom: 1px solid var(--border-subtle);
-  padding: 16px 7.6923%;
+  padding: 12px 7.6923%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   position: fixed;
   top: 0;
   width: 100%;
-  height: 80px;
+  height: 64px;
   z-index: 50;
   box-sizing: border-box;
   backdrop-filter: blur(12px);
-  background: rgba(0, 0, 0, 0.9);
 }
 
 .dark-nav {
@@ -416,12 +415,7 @@ body {
 
 /* Fix for fixed header overlap */
 body {
-  padding-top: 0;
-}
-
-/* Remove margin-top from hero section since we use padding-top now */
-section:first-of-type {
-  margin-top: 0 !important;
+  padding-top: 64px;
 }
 
 /* Responsive Design */
@@ -435,12 +429,12 @@ section:first-of-type {
   }
 
   .dark-header {
-    padding: 16px 20px;
-    height: 70px;
+    padding: 12px 20px;
+    height: 56px;
   }
   
-  section {
-    padding-top: 120px !important;
+  body {
+    padding-top: 56px;
   }
 
   .dark-nav {
