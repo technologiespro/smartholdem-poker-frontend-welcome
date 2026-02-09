@@ -227,58 +227,29 @@ body {
   opacity: 0;
 }
 
-/* Poker Chip Stack Visualization */
-.poker-chip-stack {
+/* Poker Images */
+.poker-image-wrapper {
   position: relative;
   width: 100%;
-  height: 400px;
+  height: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
+  border-radius: 16px;
 }
 
-.poker-chip {
-  position: absolute;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  border: 4px solid var(--brand-primary);
-  background: radial-gradient(circle at 30% 30%, rgba(0, 255, 209, 0.2), rgba(0, 0, 0, 0.8));
-  box-shadow: 0 8px 32px rgba(0, 255, 209, 0.3);
+.poker-chips-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 20px 60px rgba(0, 255, 209, 0.2);
+  transition: transform 0.4s ease-in-out;
 }
 
-.chip-1 {
-  transform: translateY(0px);
-  animation: chipFloat1 4s ease-in-out infinite;
-  z-index: 5;
-}
-
-.chip-2 {
-  transform: translateY(30px) translateX(-20px) scale(0.9);
-  animation: chipFloat2 4.5s ease-in-out infinite;
-  opacity: 0.8;
-  z-index: 4;
-}
-
-.chip-3 {
-  transform: translateY(60px) translateX(20px) scale(0.8);
-  animation: chipFloat3 5s ease-in-out infinite;
-  opacity: 0.6;
-  z-index: 3;
-}
-
-.chip-4 {
-  transform: translateY(90px) scale(0.7);
-  animation: chipFloat4 5.5s ease-in-out infinite;
-  opacity: 0.4;
-  z-index: 2;
-}
-
-.chip-5 {
-  transform: translateY(120px) translateX(-10px) scale(0.6);
-  animation: chipFloat5 6s ease-in-out infinite;
-  opacity: 0.2;
-  z-index: 1;
+.poker-chips-image:hover {
+  transform: scale(1.05);
 }
 
 /* CTA Box */
@@ -447,13 +418,8 @@ body {
     justify-content: center;
   }
 
-  .poker-chip-stack {
+  .poker-image-wrapper {
     height: 300px;
-  }
-
-  .poker-chip {
-    width: 150px;
-    height: 150px;
   }
 }
 

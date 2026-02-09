@@ -30,15 +30,31 @@
 
     <!-- Hero Section -->
     <section class="relative pt-32 pb-20 px-[7.6923%] overflow-hidden">
-      <!-- Animated background pattern -->
-      <div class="absolute inset-0 opacity-10">
-        <div class="absolute inset-0" :style="backgroundPattern"></div>
+      <!-- Background poker table image -->
+      <div class="absolute inset-0 opacity-20">
+        <img 
+          src="https://images.unsplash.com/photo-1596451190630-186aff535bf2?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzF8MHwxfHNlYXJjaHwxfHxwb2tlciUyMHRhYmxlfGVufDB8fHx8MTc3MDYyMjIwNHww&ixlib=rb-4.1.0&q=85"
+          alt="Poker Table"
+          class="w-full h-full object-cover"
+        />
+        <div class="absolute inset-0 bg-gradient-to-b from-black via-black/80 to-black"></div>
       </div>
 
-      <!-- Floating poker chips animation -->
-      <div class="absolute top-20 left-[10%] w-16 h-16 rounded-full bg-brand-primary opacity-20 blur-xl animate-float"></div>
-      <div class="absolute top-40 right-[15%] w-24 h-24 rounded-full bg-brand-primary opacity-15 blur-xl animate-float-delayed"></div>
-      <div class="absolute bottom-20 left-[20%] w-20 h-20 rounded-full bg-brand-primary opacity-10 blur-xl animate-float-slow"></div>
+      <!-- Floating poker cards decoration -->
+      <div class="absolute top-20 left-[5%] w-32 h-32 opacity-30 animate-float">
+        <img 
+          src="https://images.unsplash.com/photo-1541278107931-e006523892df?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzF8MHwxfHNlYXJjaHwyfHxwbGF5aW5nJTIwY2FyZHN8ZW58MHx8fHwxNzcwNjIyMjA4fDA&ixlib=rb-4.1.0&q=85"
+          alt="Playing Cards"
+          class="w-full h-full object-contain transform rotate-12"
+        />
+      </div>
+      <div class="absolute top-40 right-[10%] w-40 h-40 opacity-20 animate-float-delayed">
+        <img 
+          src="https://images.unsplash.com/photo-1542145177-4dc9b8029711?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzZ8MHwxfHNlYXJjaHwxfHxwb2tlciUyMGNoaXBzfGVufDB8fHx8MTc3MDYyMjE5OXww&ixlib=rb-4.1.0&q=85"
+          alt="Poker Chips"
+          class="w-full h-full object-contain"
+        />
+      </div>
 
       <div class="max-w-6xl mx-auto relative z-10">
         <div :class="['text-center transition-all duration-1000', isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10']">
@@ -147,12 +163,12 @@
           </div>
 
           <div class="relative">
-            <div class="poker-chip-stack">
-              <div class="poker-chip chip-1"></div>
-              <div class="poker-chip chip-2"></div>
-              <div class="poker-chip chip-3"></div>
-              <div class="poker-chip chip-4"></div>
-              <div class="poker-chip chip-5"></div>
+            <div class="poker-image-wrapper">
+              <img 
+                src="https://images.unsplash.com/photo-1542145272-597f274b38ab?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzZ8MHwxfHNlYXJjaHwzfHxwb2tlciUyMGNoaXBzfGVufDB8fHx8MTc3MDYyMjE5OXww&ixlib=rb-4.1.0&q=85"
+                alt="Poker Chips"
+                class="poker-chips-image"
+              />
             </div>
           </div>
         </div>
